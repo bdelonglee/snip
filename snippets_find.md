@@ -44,6 +44,10 @@ defaults delete -g NSWindowShouldDragOnGesture
 mate-panel --reset
 
 
+#### SYSTEM Rsync Guf to Mac Progress
+rsync -aEvh --progress --checksum GuffSource LocalDest
+
+
 #### SYSTEM Rsync Mac to Box
 rsync  -av --exclude="*.svg" ~/Documents/PROJECTS/DEV/ivy bdelonglee@box207:/u/hqr/FILM/WORK/SUP_SHELL_SCRIPTS/prod/
 
